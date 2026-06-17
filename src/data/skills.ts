@@ -1,7 +1,8 @@
-impor{Skill} from '../types';
+import type { Skill } from '../types';
 
 export const skills: Skill[] = [
     {name: 'React', category: 'frontend', level: 70},
+    {name: 'React Native', category: 'frontend', level: 55},
     {name: 'TypeScript', category: 'frontend', level: 60},
     {name: 'HTML5', category: 'frontend', level: 85},
     {name: 'JavaScript', category: 'frontend', level: 70},
@@ -12,9 +13,8 @@ export const skills: Skill[] = [
     {name: 'Python', category: 'backend', level: 70},
     {name: 'Rest APIs', category: 'backend', level: 50},
     {name: 'FastAPI', category: 'backend', level: 60},
+    {name: 'Kotlin', category: 'backend', level: 80},
 
-    {name: 'Kotlin', category: 'mobile development', level: 80},
-    {name: 'React Native', category: 'mobile development', level: 55},
 
     {name: 'SQL', category: 'database', level: 90},
     {name: 'MySQL', category: 'database', level: 85},

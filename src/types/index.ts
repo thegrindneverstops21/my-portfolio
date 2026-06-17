@@ -19,11 +19,6 @@ export interface Skill{
     level: number;
 }
 
-export interface NavLink{
-    label: string;
-    href: string;
-}
-
 export interface SocialLink{
     label: string;
     url: string;

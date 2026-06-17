@@ -184,9 +184,10 @@ export default function Hero() {
           custom={0.4}
         >
           {[
-            { num: '4+', label: 'Technologies' },
-            { num: '1+', label: 'Live project' },
+            { num: '10+', label: 'Technologies' },
+            { num: '2+', label: 'Live project' },
             { num: '100%', label: 'Ready to ship' },
+            { num: 'git', label: 'Version Control' },
             { num: 'TUT', label: 'Currently studying' },
           ].map((stat) => (
             <div key={stat.label}>
