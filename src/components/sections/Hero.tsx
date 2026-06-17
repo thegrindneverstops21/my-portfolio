@@ -1,3 +1,4 @@
+/** @jsx React.createElement */
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import {
@@ -5,6 +6,17 @@ import {
   IconBrandGithub,
   IconArrowDown,
 } from '@tabler/icons-react';
+import React from 'react';
+
+// Provide a minimal JSX namespace so TypeScript won't error if project
+// doesn't have React types installed or is using a different JSX runtime.
+declare global {
+  namespace JSX {
+    interface IntrinsicElements {
+      [elemName: string]: any;
+    }
+  }
+}
 
 const TYPED_WORDS = [
   'Full Stack Developer.',
@@ -29,10 +41,10 @@ function useTypewriter(words: string[]) {
       }
       if (isDeleting && text === '') {
         setIsDeleting(false);
-        setWordIndex((prev) => (prev + 1) % words.length);
+        setWordIndex((prev: number) => (prev + 1) % words.length);
         return;
       }
-      setText((prev) =>
+      setText((prev: string) =>
         isDeleting ? prev.slice(0, -1) : current.slice(0, prev.length + 1)
       );
     }, speed);

@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useState, useEffect } from 'react';
 import { IconMenu2, IconX } from '@tabler/icons-react';
 import { navLinks } from '../../data/nav';

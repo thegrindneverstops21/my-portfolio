@@ -1,15 +1,16 @@
 import Navbar from './components/layout/Navbar';
 import Hero from './components/sections/Hero';
+import About from './components/sections/About';
 
-function App(){
-  return(
-    <div className = "min-h-screen bg-dark">
+function App() {
+  return (
+    <div className="min-h-screen bg-dark">
       <Navbar />
       <main>
-        <Hero/>
-        {}
-        </main>
-        </div>
+        <Hero />
+        <About />
+      </main>
+    </div>
   );
 }
 
