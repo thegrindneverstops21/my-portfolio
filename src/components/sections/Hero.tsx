@@ -6,10 +6,8 @@ import {
   IconBrandGithub,
   IconArrowDown,
 } from '@tabler/icons-react';
-import React from 'react';
 
-// Provide a minimal JSX namespace so TypeScript won't error if project
-// doesn't have React types installed or is using a different JSX runtime.
+
 declare global {
   namespace JSX {
     interface IntrinsicElements {
