@@ -12,8 +12,10 @@ const variantStyles: Record<TagVariant, string> = {
     gray: 'bg-muted/10 border-muted/20 text-muted',
 };
 
-export default function Tag({labe;, variant = 'purple'}: TagProps){
-    return(
-        span className = {'inline-flex items-center text-xs font-medium px-3 py-1.5 rounded-lg border ${variantStyles[variant]}'}>{label}</span>
+export default function Tag({label, variant = 'purple'}: TagProps){
+    return (
+        <span className={`inline-flex items-center text-xs font-medium px-3 py-1.5 rounded-lg border ${variantStyles[variant]}`}>
+            {label}
+        </span>
     );
 }
