@@ -1,25 +1,16 @@
-import Navbar from './components/layout/Navbar';
-import Footer from './components/layout/Footer';
-import Hero from './components/sections/Hero';
-import About from './components/sections/About';
-import Skill from './components/sections/Skills';
-import Project from './components/sections/Projects';
-import Education from './components/sections/Education';
-import Contact from './components/sections/Contact';
+import React from 'react';
+import { Hero } from './components/sections/Hero';
+import { Projects } from './components/sections/Projects';
 
-function App() {
+export function App() {
   return (
-    <div className="min-h-screen bg-dark">
-      <Navbar />
-      <main>
+    <div className="min-h-screen bg-slate-950 text-slate-100 font-sans antialiased selection:bg-slate-800 selection:text-white">
+      <div className="fixed inset-0 -z-10 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.15),rgba(255,255,255,0))]" />
+
+      <main className="max-w-5xl mx-auto">
         <Hero />
-        <About />
-        <Skill />
-        <Project />
-        <Education />
-        <Contact />
+        <Projects />
       </main>
-      <Footer />
     </div>
   );
 }
