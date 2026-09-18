@@ -2,7 +2,6 @@ import type { Skill } from '../types';
 
 export const skills: Skill[] = [
     {name: 'React', category: 'frontend', level: 70},
-    {name: 'React Native', category: 'frontend', level: 55},
     {name: 'TypeScript', category: 'frontend', level: 60},
     {name: 'HTML5', category: 'frontend', level: 85},
     {name: 'JavaScript', category: 'frontend', level: 70},
